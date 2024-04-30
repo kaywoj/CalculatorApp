@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clearance Calculator</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css">
+    <script src="math.js"></script>
+</head>
+<body>
+    <h2>Clearance Calculator</h2>
+    <form>
+        <label for="originalPrice">Original Price:</label><br>
+        <input type="number" id="originalPrice" name="originalPrice" required><br>
+        <label for="discount">Discount Percentage:</label><br>
+        <input type="number" id="discount" name="discount" required><br>
+        <label for="tax">Sales Tax Percentage:</label><br>
+        <input type="number" id="tax" name="tax" required><br>
+        <button type="button" onclick="calculateDiscount()">Calculate</button><br>
+        <br>
+        <button type="button" id="addButton" style="display: none;" onclick="addToTotal()">Add</button>
+    </form>
+    <p id="errorMessage"></p>
+    <p id="result"></p>
+    <button id="toggleReceiptButton" onclick="toggleReceipt()">Show/Hide Receipt</button>
+    <div id="receipt" style="display: none;">
+    <h2>Receipt</h2>
+    <pre id="receiptContent"></pre>
+</div>
+</body>
+</html>

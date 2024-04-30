@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    width: 400px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ddd;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+}
+
+#receipt {
+    position: fixed;
+    bottom: 0;
+    width: 30%; /* Change this to the width you want */
+    max-height: 30%; /* Change this to the max height you want */
+    overflow: auto; /* Add a scrollbar if the content is too long */
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+    border: 2px solid black;
+}
+
+#receipt h2 {
+    text-align: center;
+}
+
+#errorMessage {
+    color: red;
+    font-weight: bold;
+}
+
+#toggleReceiptButton {
+    padding: 10px 20px; /* Adjust the padding to change the size of the button */
+    font-size: 14px; /* Adjust the font size */
+}
